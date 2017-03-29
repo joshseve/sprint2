@@ -3,8 +3,13 @@
 
   <head>
     <meta charset="utf-8">
-    <title> Trello Beta</title>
+    <title> Trello Beta </title>
+    <link rel="shortcut icon" href="Sin título-2.png" type="image/x-icon">
   </head>
+
+    <h1 align="center">
+      <font face="Tahoma" color="#235E99" size="6"> Puedes utlizar esta versión Beta de Trello completamente ¡GRATIS! </font>
+    </h1>
 
   <style>
       li span {
@@ -42,7 +47,6 @@
       return false;
   }
 
-
   function find_li(contenido)
   {
       var el = document.getElementById("listaDesordenada").getElementsByTagName("li");
@@ -54,20 +58,25 @@
       return true;
   }
 
-
   function eliminar(elemento)
   {
       var id=elemento.parentNode.getAttribute("id");
       node=document.getElementById(id);
       node.parentNode.removeChild(node);
   }
+
+  function borraTodo(listaDesordenada)
+  {
+      var id=elemento.parentNode.getAttribute("id");
+      node=document.getElementById(id);
+      node.parentNode.removeChild(node);
+  }
+
   </script>
 
   <body>
+    <body background="fondo-web-blanco.jpg">
 
-    <h1 align="center">
-      <font face="Tahoma" color="#235E99" size="6"> Puedes utlizar esta versión Beta de Trello completamente ¡GRATIS! </font>
-    </h1>
 
     <p align="center" style="COLOR: #000000; BACKGROUND-COLOR: #6f90b8">
       <font face="Tahoma" color="White" size="5">
@@ -76,10 +85,15 @@
       </font>
     </p>
 
+      <br>
+        <img src="1cbacf6462fc8b47b11b3a8dadb0fdf4.jpg" align="right">
+      <br>
+
     <p>
       <form>
         <input type="text" id="tareaNueva" placeholder="Escribe aquí tus pendientes">
-        <input type="submit" onclick="return add_li()" value="Agrega esta Tarea a mi Lista">
+        <input type="submit" onclick="return add_li()" value="Agrega a mi Lista">
+        <input type="submit" onclick="return borraTodo()" value="Eliminar Lista Completa">
       </form>
     </p>
 
