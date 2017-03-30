@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title> Trello Beta </title>
+    <link rel="shortcut icon" href="img/Sin título-2.png" type="image/x-icon">
+  </head>
+
+    <h1 align="center">
+      <font face="Tahoma" color="#235E99" size="6"> Puedes utlizar esta versión Beta de Trello completamente ¡GRATIS! </font>
+    </h1>
+
+  <style>
+      li span {
+          color:#fff;
+          border:1px solid #ccc;
+          background-color:#7FD2F0;
+          margin-right:10px;
+          padding: 0 2px;
+          border-radius:4px;
+          -moz-border-radius:4px;
+          -webkit-border-radius:4px;
+          -o-border-radius:4px;
+          border-radius:4px;
+          font-weight:bold;
+          font-size:0.8em;
+          cursor:pointer;
+      }
+  </style>
+
+
+  <body>
+    <body background="img/fondo-web-blanco.jpg">
+
+
+    <p align="center" style="COLOR: #000000; BACKGROUND-COLOR: #6f90b8">
+      <font face="Tahoma" color="White" size="5">
+        Crea listas con tus pendientes y elimínalos cuando los completes.
+         <br>
+      </font>
+    </p>
+
+      <br>
+        <img src="img/1cbacf6462fc8b47b11b3a8dadb0fdf4.jpg" align="right">
+      <br>
+
+    <p>
+      <form>
+        <input type="text" id="tareaNueva" placeholder="Escribe aquí tus pendientes">
+        <input type="button"  value="Agrega a mi Lista" onclick="add_li();">
+        <input type="button"  value="Eliminar Lista Completa" onclick="borraTodo();">
+      </form>
+    </p>
+
+    <ul id="listaDesordenada">
+    </ul>
+
+    <script src= "trelloBeta2.js">
+    </script>
+
+  </body>
+
+</html>
